@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import InputField from './components/inputField/inputField'
+import SignIn from './pages/signIn/signIn';
 
 function App() {
   return (
     <div className="App">
-      <InputField name="email" placeholder="Enter valid email" type="email" image="https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" />
+      <SignIn/>
     </div>
   );
 }
