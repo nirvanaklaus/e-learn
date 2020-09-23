@@ -2,7 +2,7 @@ import React from 'react';
 import InputField from '../../components/extraPageComponents/inputField/inputField';
 import login from '../../components/signInPageComponents/login.svg'
 
-const SignIn = () => {
+const SignUp = () => {
     return (
         <div className="sign-in">
             <div className="left-sign-in">
@@ -11,20 +11,21 @@ const SignIn = () => {
             </div>
             <div className="right-sign-in">
                 <h1>Sign In</h1>
-                <InputField name="email" placeholder="Enter valid email" type="email" image="https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" />
-                <InputField name="password" placeholder="Enter valid password" type="password" image="https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" />                
-                <InputField name="password" placeholder="Enter valid password" type="password" image="https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" />                
-                <InputField name="password" placeholder="Enter valid password" type="password" image="https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" />                
-                <InputField name="password" placeholder="Enter valid password" type="password" image="https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" />                
-                <InputField name="password" placeholder="Enter valid password" type="password" image="https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" />                
+                <InputField name="First Name" placeholder="First Name" type="text" image="https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" />                
+                <InputField name="Last Name" placeholder="Last Name" type="text" image="https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" />                
+                <InputField name="E-mail" placeholder="Enter valid email" type="email" image="https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" />
+                <InputField name="Department" placeholder="Department" type="text" image="https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" />                
+                <InputField name="Phone Number" placeholder="Phone Number" type="number" image="https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" />                
+                <InputField name="Password" placeholder="Enter valid password" type="password" image="https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" />                
+                <InputField name="Confirm_password" placeholder="confirm_password" type="password" image="https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" />                
                 <section>
                 <input type="checkbox" name="remember" value="remember"/>
                 <label htmlFor="remember" id="remember-label">Remember me</label>
                 </section>
-                <button>Log In</button>
+                <button>Sign Up</button>
             </div>
         </div>
     );
 };
 
-export default SignIn;
+export default SignUp;
