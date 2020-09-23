@@ -1,0 +1,49 @@
+.dashboard-main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    // height: 100vh;
+    h1,
+    h3 {
+        text-align: center;
+        font-weight: 700;
+    }
+    h3 {
+        color: grey;
+    }
+    .select-view {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        button {
+            background-color: transparent;
+            color: grey;
+            width: 100px;
+            height: 50px;
+            border: 0.1px solid grey;
+            border-radius: 5px;
+            box-shadow: 0px 0px 1px 0px;
+        }
+        button:focus,
+        .on {
+            background: #e9ecfb;
+            color: #3974c4;
+        }
+    }
+    .view {
+        flex-wrap: wrap;
+        margin: 80px;
+        display: flex;
+        justify-content: center;
+
+        &.larges {
+            .dashboard-card-main {
+                width: 800px !important;
+                height: 400px;
+            }
+        }
+    }
+    &.larges {
+        padding-top: 200px;
+    }
+}
