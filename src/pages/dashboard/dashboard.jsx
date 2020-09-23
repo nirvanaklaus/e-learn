@@ -16,9 +16,9 @@ const Dashboard = () => {
                 <button onClick={()=>setView(1)} className={`${view === 1? 'on' : ''}`}>List</button>
             </section>
             <section className={`view ${view === 1 ? "larges" : ""}`}>
-            <DashboardCard title="Calendar" image={calendar}/>
-            <DashboardCard title="Resource" image={resource}/>
-            <DashboardCard title="Course" image={course}/>
+            <DashboardCard title="Calendar" image={calendar} view={view}/>
+            <DashboardCard title="Resource" image={resource} view={view}/>
+            <DashboardCard title="Course" image={course} view={view}/>
             </section>
         </div>
     );
