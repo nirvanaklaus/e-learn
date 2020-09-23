@@ -7,8 +7,7 @@ import Dashboard from './pages/dashboard/dashboard';
 function App() {
   return (
 
-      <SignIn/>
-
+    <div>
       {/* <SignIn/> */}
       <SignUp/>
       {/* <Dashboard/> */}
