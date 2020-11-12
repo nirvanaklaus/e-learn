@@ -10,7 +10,7 @@ const SignIn = () => {
                 <h1>Sign into account</h1>
             </div>
             <div className="right-sign-in">
-                <h1>Sign In</h1>
+                <h1>Sign Up</h1>
                 <InputField name="email" placeholder="Enter valid email" type="email" image="https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" />
                 <InputField name="password" placeholder="Enter valid password" type="password" image="https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" />                
                 <InputField name="password" placeholder="Enter valid password" type="password" image="https://upload.wikimedia.org/wikipedia/en/e/e0/WPVG_icon_2016.svg" />                
@@ -21,7 +21,7 @@ const SignIn = () => {
                 <input type="checkbox" name="remember" value="remember"/>
                 <label htmlFor="remember" id="remember-label">Remember me</label>
                 </section>
-                <button>Log In</button>
+                <button>Sign Up</button>
             </div>
         </div>
     );
