@@ -8,8 +8,10 @@ const userReducer = (state = INITIAL_STATE, action) => {
         isSignedIn: true,
         token: action.payload
       };
-    case 'SIGN_OUT':
-      return {};
+      case 'SIGN_OUT':
+        return {
+          isSignedIn: false,
+      };
     default:
       return state;
   }

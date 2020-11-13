@@ -9,8 +9,8 @@ import { signInAction, signOutAction } from '../../redux/user/user.actions'
 const SignIn = props => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [token, setToken] = useState('')
-    const requestSignIn = (() => {
+    // const [token, setToken] = useState('')
+    const requestSignIn = (cb => {
         fetch('https://ela-student.herokuapp.com/account/api/login', {
             method: 'POST',
             body: JSON.stringify({
@@ -23,7 +23,13 @@ const SignIn = props => {
         })
             .then(res => res.json())
             .then(data => {
-                setToken(data.token)
+                if (!data.error) {
+                    console.log(data.token)
+                    cb(data.token)
+                }
+                else {
+                    console.log(data.error)
+                }
             })
             .catch(err => console.log(err))
     })
@@ -41,9 +47,8 @@ const SignIn = props => {
                     <input type="checkbox" name="remember" value="remember" />
                     <label htmlFor="remember" id="remember-label">Remember me</label>
                 </section> */}
-                <button onClick={async() => {
-                    await requestSignIn()
-                    props.signInDispatch(token)
+                <button onClick={async () => {
+                    await requestSignIn(props.signInDispatch)
                 }}>Log In</button>
                 <button onClick={() => {
                     props.signOutDispatch()
