@@ -19,16 +19,17 @@ import { connect } from 'react-redux';
 
 
 
+
 function App(props) {
   return (
-    <div style={{ margin: "20px" }}>
-      {/* <button onClick={()=>props.firstAction(1)}>+</button> */}
-      {/* <button onClick={()=>props.secondAction(1)}>-</button> */}
-      {/* <h3 style={{border: '1px solid grey', width:'200px',boxShadow:'0px 0px 3px 0px'}}>{props.number}</h3> */}
-      <SignIn />
-      <SignUp />
-      <Dashboard />
-    </div >
+    
+
+
+    <div>
+      {/* <SignIn/> */}
+      <SignUp/>
+      {/* <Dashboard/> */}
+    </div>
 
   );
 }
